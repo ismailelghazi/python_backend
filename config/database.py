@@ -4,4 +4,4 @@ client = MongoClient("mongodb+srv://ismail47el:BoAM6I7skfK7o1hj@assurance.gcuvjl
 
 db = client.assurance_prj
 
-collection_name = db("Clint_collection")
+collection_name = db["Client_collection"]
