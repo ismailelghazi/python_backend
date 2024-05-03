@@ -13,6 +13,6 @@ async def get_client():
     return client
 
 # Post Request
-@router.post('/')
+@router.post("/")
 async def create_user(client: Clients):
     collection_name.insert_one(dict(client))
