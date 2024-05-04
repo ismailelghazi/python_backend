@@ -7,12 +7,12 @@ from bson import objectid
 router = APIRouter()
 
 # GET Request Method
-@router.get("/")
+@router.get("/client")
 async def get_client():
     client = list_serial(collection_name.find())
     return client
 
 # Post Request
-@router.post("/")
+@router.post("/client")
 async def create_user(client: Clients):
     collection_name.insert_one(dict(client))
